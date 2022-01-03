@@ -1,0 +1,79 @@
+[
+    {
+        "id": 4,
+        "name": "Bachelor of Pharmacy",
+        "command": "pharmacy",
+        "link": "https://drive.google.com/file/d/1mc4qu8iWWjzN2opbuNAKw7gRzft-XJ6Z/view?usp=sharing",
+        "description": "Bachelor of Pharmacy (B.Pharma) is a four-year undergraduate program in ...."
+    },
+    {
+        "id": 5,
+        "name": "BBA in Aviation",
+        "command": "aviation",
+        "link": "https://drive.google.com/file/d/1D3qLwVhb_7LqNNXA-MwGb9u_wSiqtz8B/view?usp=sharing",
+        "description": "Aviation is the activities surrounding mechanical flight and the aircraft industry. Aircraft includes fixed-wing and rotary-wing types, morphable wings, wing-less lifting bodies, as well as lighter-than-air craft such as hot air balloons and airships."
+    },
+    {
+        "id": 6,
+        "name": "Career in Psychology",
+        "command": "psychology",
+        "link": "https://drive.google.com/file/d/1Yh1ZddVBsKCzotzdVcezWPngvdcjLslh/view?usp=sharing",
+        "description": "Psychology is the study of human behavior and mental processes. Psychologists study a person’s reactions, emotions, and behavior, and apply their understanding of that behavior to treat the associated behavioral problems."
+    },
+    {
+        "id": 7,
+        "name": "Commerce Stream",
+        "command": "commerce",
+        "link": "https://drive.google.com/file/d/17ZMYskLRH2bXH1wIa0hxi0JoyiWr4lA-/view?usp=sharing",
+        "description": "Commerce is the field of study in which students learn topics related to business, financial information/transactions, trading of economic values, merchandising and trading. Commerce acts as trading conduct for economic agents."
+    },
+    {
+        "id": 8,
+        "name": "Commercial Pilot Licence",
+        "command": "cpl",
+        "link": "https://drive.google.com/file/d/1MMLDHyAZPhwp2QBz-YosN6yP-ahB9Ez2/view?usp=sharing",
+        "description": "A commercial pilot licence (CPL), is a type of pilot licence that permits the holder to act as a pilot of an aircraft and be paid for his/her work."
+    },
+    {
+        "id": 9,
+        "name": "Humanities Stream",
+        "command": "humanities",
+        "link": "https://drive.google.com/file/d/1vqE58YxY9KRB5dvo8y6E9XcRv6ALjBAZ/view?usp=sharing",
+        "description": "Defining humanities is a difficult task. However, it can be said in a few words that it is an academic discipline which deals with the study of the ‘Human Condition’, utilizing methodologies that are usually analytical, critical or speculative."
+    },
+    {
+        "id":10,
+        "name": "Inspire Scholarship",
+        "command": "inspire scholarship",
+        "link": "https://drive.google.com/file/d/13DwIurmR1ONzgd7BYjw-sTBAoaYflM1I/view?usp=sharing",
+        "description": "INSPIRE Scholarship for Higher Education (SHE) is a scholarship programme implemented by the Department of Science and Technology "
+    },
+    {
+        "id": 11,
+        "name": "ITI Courses",
+        "command": "iti",
+        "link": "https://drive.google.com/file/d/1ZauY0Vqh9HjtXUhKOmjEbfJVZrMS8m_s/view?usp=sharing",
+        "description": "ITI stands for Industrial Training Institute. ITIs are known to offer job oriented training courses. These training programs are popularly known as ‘trades’. "
+    },
+    {
+        "id": 12,
+        "name": "MBA",
+        "command": "mba",
+        "link": "https://drive.google.com/file/d/1Addkuiqfe833OFonHZ3tGWsbaRFL3Zqr/view?usp=sharing",
+        "description": "The Master of Business Administration (MBA) is an internationally-recognized degree designed to develop the skills required for careers in business and management. "
+    },
+    {
+        "id": 13,
+        "name": "medical stream",
+        "command": "medical",
+        "link": "https://drive.google.com/file/d/1zrmUadPYT5Ty7e4JMpxOJbbCZI2BcKOi/view?usp=sharing",
+        "description": "Completing class 10th, students have a choice to choose one particular stream out of three Arts, Commerce and Science. "
+    },
+    {
+        "id": 14,
+        "name": "NIFT",
+        "command": "nift",
+        "link": "https://drive.google.com/file/d/136PLmK7M897UJsZKoc-Ao6PYj8dOuRzI/view?usp=sharing",
+        "description": "National Institute of Fashion Technology conducts the NIFT Entrance Examination every year for admission to its undergraduate (Bachelor of Design, Bachelor of Fashion Technology) and post-graduate courses in Fashion. "
+    }
+]
