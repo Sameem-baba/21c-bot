@@ -111,7 +111,15 @@ module.exports = {
             .setDescription(`${advice.slip.advice}`)
           message.channel.send({embeds: [adviceEmbed]})
         })
-      }
+      } else if (message.content.substring(1) === 'about'){
+        const helpEmbed = new Discord.MessageEmbed()
+          .setColor("#558aff")
+          .setTitle('About')
+          .addFields(
+            { name: 'Owner', value: '@Sameem#3048' },
+          )
+          .setImage("");
+        message.channel.send({embeds: [helpEmbed]})}
     }
 
     if (message.content.startsWith('s?')) {
