@@ -2,6 +2,12 @@ require("dotenv").config();
 const keepAlive = require("./server");
 const fs = require('fs');
 
+const Database = require('./config/Database');
+
+const db = new Database();
+
+db.connect();
+
 const { Client, Intents, Collection } = require('discord.js');
 
 // Create a new client instance
@@ -36,7 +42,5 @@ for (const file of eventFiles) {
     client.on(event.name, (...args) => event.execute(...args, commands));
   }
 }
-
-keepAlive();
 
 client.login(process.env.TOKEN);
