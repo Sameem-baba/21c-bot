@@ -3,9 +3,9 @@ const fs = require('fs');
 {/*const Database = require('./config/Database');
 const db = new Database();
 
-db.connect();
+db.connect();*/}
 
-const { Client, Intents, Collection } = require('discord.js');*/}
+const { Client, Intents, Collection } = require('discord.js');
 
 // Create a new client instance
 const client = new Client({
