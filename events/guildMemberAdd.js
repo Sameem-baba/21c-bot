@@ -1,13 +1,9 @@
-const Discord = require("discord.js")
+/*const Discord = require("discord.js")
 const GuildSettings = require("../models/GuildSettings");
 
 module.exports = {
   name: "guildMemberAdd",
   async execute(member) {
-      /*member.guild.channels.cache.get("913125129805000797").send(
-        `${member.user.username} has joined the server`
-      );*/
-    
     const guildSettings = await GuildSettings.findOne({
       guild_id: member.guild.id,
     })
@@ -26,4 +22,4 @@ module.exports = {
 
       member.guild.channels.cache.get(guildSettings.welcome_channel_id).send({embeds: [newMemberEmbed]})
   }
-}
+}*/
