@@ -17,7 +17,7 @@ module.exports ={
 
     (async () => {
       try {
-        if (process.env.TOKEN) {
+        if (process.env.TOKEN=== "production") {
           await rest.put(Routes.applicationCommands(CLIENT_ID), {
             body: commands
           });
