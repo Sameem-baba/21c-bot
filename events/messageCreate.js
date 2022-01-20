@@ -87,8 +87,7 @@ module.exports = {
             .setColor("#558aff")
             .setTitle(data.activity)
             .setDescription(`Type - ${data.type}`)
-            .setURL(data.link)
-            .setTimestamp(new Date());
+            .setURL(data.link);
           message.channel.send({ embeds: [boredEmbed] });
         });
       } else if (message.content.substring(1) === "help") {
@@ -118,8 +117,7 @@ module.exports = {
             .setColor("#558aff")
             .setTitle(data.title)
             .setDescription(truncate(data.explanation, 250))
-            .setImage(data.hdurl)
-            .setTimestamp(`${new Date()}`);
+            .setImage(data.hdurl);
           message.channel.send({ embeds: [apodEmbed] });
         });
       } else if (message.content.substring(2) === "mars") {
@@ -128,8 +126,7 @@ module.exports = {
             .setColor("#558aff")
             .setTitle("An Image of Mars By Curosity Rover")
             .setDescription(data.photos[number]?.earth_date)
-            .setImage(data.photos[number]?.img_src)
-            .setTimestamp(new Date());
+            .setImage(data.photos[number]?.img_src);
           message.channel.send({ embeds: [marsEmbed] });
         });
       } else if (message.content.substring(2) === "latest") {
@@ -139,7 +136,6 @@ module.exports = {
             .setTitle(data.name)
             .setDescription(`${data?.details}`)
             .setImage(data.links.patch.large)
-            .setTimestamp(new Date())
             .setURL(data.links.webcast);
           message.channel.send({ embeds: [latestEmbed] });
         });
@@ -150,7 +146,6 @@ module.exports = {
             .setTitle(data[random_number].title)
             .setDescription(`${data[random_number].summary}`)
             .setImage(data[random_number].imageUrl)
-            .setTimestamp(new Date())
             .setURL(data[random_number].url);
           message.channel.send({ embeds: [newsEmbed] });
         });
@@ -169,10 +164,7 @@ module.exports = {
             )
             .setURL(data?.[0]?.web_pages?.[0])
             .setTimestamp(new Date())
-            .setFooter(
-              "21consequences",
-              "https://instagram.fixj2-1.fna.fbcdn.net/v/t51.2885-19/s320x320/121002505_191567832412190_2484127239596695619_n.jpg?_nc_ht=instagram.fixj2-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=C0_EeYh7lvEAX9T0Nax&edm=ABfd0MgBAAAA&ccb=7-4&oh=6082d55e3a50a30894dc08768334ce77&oe=61B024EE&_nc_sid=7bff83"
-            );
+            .setFooter(`${member.guild.name}`, `${member.guild.iconURL()}`);
           message.channel.send({ embeds: [univEmbed] });
         } else {
           message.channel.send({
@@ -197,10 +189,7 @@ module.exports = {
           .setDescription(`${data?.description}`)
           .setURL(data?.link)
           .setTimestamp(new Date())
-          .setFooter(
-            "21consequences",
-            "https://instagram.fixj2-1.fna.fbcdn.net/v/t51.2885-19/s320x320/121002505_191567832412190_2484127239596695619_n.jpg?_nc_ht=instagram.fixj2-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=C0_EeYh7lvEAX9T0Nax&edm=ABfd0MgBAAAA&ccb=7-4&oh=6082d55e3a50a30894dc08768334ce77&oe=61B024EE&_nc_sid=7bff83"
-          );
+          .setFooter(`${member.guild.name}`, `${member.guild.iconURL()}`);
         message.channel.send({ embeds: [pdfEmbed] });
       } else {
         message.channel.send({
