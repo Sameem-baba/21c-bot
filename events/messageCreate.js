@@ -164,7 +164,7 @@ module.exports = {
             )
             .setURL(data?.[0]?.web_pages?.[0])
             .setTimestamp(new Date())
-            .setFooter(`${member.guild.name}`, `${member.guild.iconURL()}`);
+            .setFooter(`${message.guild.name}`, `${message.guild.iconURL()}`);
           message.channel.send({ embeds: [univEmbed] });
         } else {
           message.channel.send({
