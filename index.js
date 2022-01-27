@@ -1,11 +1,13 @@
 require("dotenv").config();
-const fs = require('fs');
-{/*const Database = require('./config/Database');
+const fs = require("fs");
+{
+  /*const Database = require("./config/Database");
 const db = new Database();
 
-db.connect();*/}
+db.connect();*/
+}
 
-const { Client, Intents, Collection } = require('discord.js');
+const { Client, Intents, Collection } = require("discord.js");
 
 // Create a new client instance
 const client = new Client({
@@ -13,10 +15,12 @@ const client = new Client({
     Intents.FLAGS.GUILDS,
     Intents.FLAGS.GUILD_MESSAGES,
     Intents.FLAGS.GUILD_MEMBERS,
-  ]
+  ],
 });
 
-const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
+const commandFiles = fs
+  .readdirSync("./commands")
+  .filter((file) => file.endsWith(".js"));
 
 const commands = [];
 
@@ -28,13 +32,15 @@ for (const file of commandFiles) {
   client.commands.set(command.data.name, command);
 }
 
-const eventFiles = fs.readdirSync("./events").filter(file => file.endsWith(".js"));
+const eventFiles = fs
+  .readdirSync("./events")
+  .filter((file) => file.endsWith(".js"));
 
 for (const file of eventFiles) {
   const event = require(`./events/${file}`);
 
-  if(event.once) {
-    client.once(event.name, (...args) => event.execute(...args, commands))
+  if (event.once) {
+    client.once(event.name, (...args) => event.execute(...args, commands));
   } else {
     client.on(event.name, (...args) => event.execute(...args, commands));
   }
