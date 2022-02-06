@@ -1,7 +1,10 @@
-const Discord = require("discord.js");
-const GuildSettings = require("../models/GuildSettings");
+{
+  /*const Discord = require("discord.js");
+const GuildSettings = require("../models/GuildSettings");*/
+}
 
-module.exports = {
+{
+  /*module.exports = {
   name: "guildMemberAdd",
   async execute(member) {
     {
@@ -12,7 +15,7 @@ module.exports = {
     if (!guildSettings & !guildSettings.welcome_channel_id) {
       return;
     }*/
-    }
+  /*
 
     const newMemberEmbed = new Discord.MessageEmbed()
       .setColor("#558aff")
@@ -27,5 +30,6 @@ module.exports = {
     member.guild.channels.cache
       .get("931453687417700402")
       .send({ embeds: [newMemberEmbed] });
-  },
-};
+  }
+}*/
+}

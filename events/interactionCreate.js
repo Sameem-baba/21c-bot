@@ -11,12 +11,12 @@ module.exports = {
     try {
       await command.execute(interaction);
     } catch (err) {
-      if (err) console.error(err);
+      if (err) console.log(err);
 
       await interaction.reply({
         content: "An error occured while executing that command.",
-        empheral: true
-      })
+        empheral: true,
+      });
     }
-  }
-}
+  },
+};
